@@ -9,13 +9,30 @@ h2 {
     margin: 0;
     padding-top: 32px;
 }
+.container {
+    width: 90vw;
+    max-width: 900px;
+    margin: auto;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: #000000;
+    color: whitesmoke;
+    padding: 8px 0px;
+    width: 100%;
+    text-align: center;
+}
 #navbar {
     list-style: inline;
-    background-color: #85ad5f;
-    position: fixed;
-    width:100vw;
+    background-color: #000000;
+    color: whitesmoke;
+    position:-webkit-sticky;
+    position: sticky;
+    width: 100%;
     margin: 0;
     padding: 0;
+    top: 0px;
 }
 
 #nav-list {
@@ -36,11 +53,14 @@ h2 {
 }
 #nav-list li a {
     display: block;
-    color: #000000;
+    color: whitesmoke;
+    /* color: #000000; */
     padding: 8px 20px;
     text-decoration: none;
 }
-
+#nav-list li a:first-child {
+    padding-left: 0px;
+}
 #nav-list li a:hover {
     background-color: #555555;
     color: white;
