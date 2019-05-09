@@ -5,14 +5,16 @@ body {
     padding: 0;
 }
 h2 {
-
+    text-align: center;
     margin: 0;
-    padding-top: 32px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
 .container {
     width: 90vw;
     max-width: 900px;
     margin: auto;
+    /* margin-bottom: -30px; */
 }
 footer {
     position: fixed;
@@ -75,9 +77,26 @@ footer {
 }
 
 #contact {
-    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content:center;
+    padding-bottom: 40px;
+    /* width: 100%; */
+    /* background-color: #555555; */
+    /* min-height: 100vh; */
+}
+#contact-icons-id {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: #df2b2b; */
 }
 
+.contact-icon {
+    font-size: 40pt;
+}
 
 .project-tile {
 
