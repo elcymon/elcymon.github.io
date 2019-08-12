@@ -23,22 +23,33 @@
 
         <nav>
             <div  id='navbar'>
-                <a href='#home'>elcymon</a>
-                <a href='#welcome-section'>About</a>
-                <a href='#projects'>Coding</a>
-                <a href='#research'>Research</a>
-                <a href='#contact'>Contact</a>
-                <a href='#'>Resume</a>
-                <a href='#'>Blog?</a>
+                <a href='#home' class='nav-link nav-active'>elcymon</a>
+                <div>
+                    <span id='scroll-location'>None</span> 
+                    <span id='link-location'>None</span>
+                </div>
+                <div id='nav-links'>
+                    <a class='nav-link' href='#home'>elcymon</a>
+                    <a class='nav-link' href='#welcome-section'>About</a>
+                    <a class='nav-link' href='#projects'>Coding</a>
+                    <a class='nav-link' href='#research'>Research</a>
+                    <a class='nav-link' href='#contact'>Contact</a>
+                    <a class='nav-link' href='#'>Resume</a>
+                    <a class='nav-link' href='#'>Blog?</a>
+                </div>
+                <a class='nav-link' href="javascript:void(0);" id="nav-icon" onclick="navFunction()">
+                        <i class="fa fa-bars"></i>
+                </a>
             </div>
         </nav>
+
         <main>
-            <div id='welcome-section'>
-                <h2>About me</h2>
+            <div class='sections' id='welcome-section'>
+                <h2  id='aboutMe' onclick="myPosition()">About me</h2>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, laboriosam veritatis! Quibusdam, debitis! Asperiores quia nesciunt labore dolor quasi eaque, similique porro molestiae officia qui facilis, inventore ipsum. Est, sequi.
             </div>
                 
-            <div id='projects'>
+            <div class='sections' id='projects'>
                 <h2>Projects</h2>
                 I work with a range of programming languages and tools in robotics, machine learning and data visualization
                 <p>
@@ -76,7 +87,7 @@
                 
             </div>
             
-            <div id='contact'>
+            <div class='sections' id='contact'>
                 <h2>Connect</h2>
                 <div id='contact-icons-id'>
                     <span class='fab fa-github contact-icon'></span>
