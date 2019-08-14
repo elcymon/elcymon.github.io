@@ -11,9 +11,9 @@
 
     </head>
     <body>
-        <header>
+        <header class='sections'>
             <img id='profile-photo' src="images/profile-photo.png">
-            <h1 id='my-name'>Simon Obute</h1>
+            <h2 id='my-name'>Simon Obute</h2>
             <div id='current-role'>AI and Robotics Researcher</div>
             <div id='current-affiliation'>University of Leeds</div>
             <div id='card-linkedin'><a href='https://www.linkedin/in/elcymon'>LinkedIn</a></div>
@@ -23,34 +23,37 @@
 
         <nav>
             <div  id='navbar'>
-                <a href='#home' class='nav-link nav-active'>elcymon</a>
-                <div>
+                <div id='nav-active'>elcymon</div>
+                <!-- <div>
                     <span id='scroll-location'>None</span> 
                     <span id='link-location'>None</span>
-                </div>
-                <div id='nav-links'>
-                    <a class='nav-link' href='#home'>elcymon</a>
-                    <a class='nav-link' href='#welcome-section'>About</a>
-                    <a class='nav-link' href='#projects'>Coding</a>
-                    <a class='nav-link' href='#research'>Research</a>
-                    <a class='nav-link' href='#contact'>Contact</a>
-                    <a class='nav-link' href='#'>Resume</a>
-                    <a class='nav-link' href='#'>Blog?</a>
-                </div>
-                <a class='nav-link' href="javascript:void(0);" id="nav-icon" onclick="navFunction()">
-                        <i class="fa fa-bars"></i>
-                </a>
+                </div> -->
+                <div id='hidden'>
+            <a class='nav-link' href="javascript:void(0);" id="nav-icon" onclick="navFunction()">
+                    <i class="fa fa-bars"></i>
+            </a>
+            
+        </div>
             </div>
-        </nav>
 
+        <div id='nav-links'>
+            <a class='nav-link' href='#home'>elcymon</a>
+            <a class='nav-link' href='#welcome-section'>About</a>
+            <a class='nav-link' href='#projects'>Coding</a>
+            <a class='nav-link' href='#research'>Research</a>
+            <a class='nav-link' href='#contact'>Contact</a>
+            <a class='nav-link' href='#'>Resume</a>
+            <a class='nav-link' href='#'>Blog?</a>
+        </div>
+        </nav>
         <main>
-            <div class='sections' id='welcome-section'>
-                <h2  id='aboutMe' onclick="myPosition()">About me</h2>
+            <div class='sections'>
+                <h2  id='welcome-section' onclick="myPosition()">About me</h2>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, laboriosam veritatis! Quibusdam, debitis! Asperiores quia nesciunt labore dolor quasi eaque, similique porro molestiae officia qui facilis, inventore ipsum. Est, sequi.
             </div>
                 
-            <div class='sections' id='projects'>
-                <h2>Projects</h2>
+            <div  class='sections'>
+                <h2 id='projects'>Projects</h2>
                 I work with a range of programming languages and tools in robotics, machine learning and data visualization
                 <p>
                     Programming Languages
@@ -87,8 +90,8 @@
                 
             </div>
             
-            <div class='sections' id='contact'>
-                <h2>Connect</h2>
+            <div class='sections' >
+                <h2 id='contact'>Connect</h2>
                 <div id='contact-icons-id'>
                     <span class='fab fa-github contact-icon'></span>
                     <span class='fab fa-linkedin contact-icon'></span>
